@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: rem(13px);
+  font-family: 'Manrope', sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
