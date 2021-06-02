@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  font-size: 16px;
+  font-size: 0.8125rem;
+  font-family: 'Manrope', sans-serif;
 }
 
 .attribution {
