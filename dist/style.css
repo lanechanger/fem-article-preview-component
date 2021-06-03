@@ -14,6 +14,9 @@ html {
 body {
   font-size: 0.8125rem;
   font-family: 'Manrope', sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #ecf2f8;
 }
 
 .attribution {
@@ -23,5 +26,34 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+.l-site-container {
+  margin: 0 6.4%;
+}
+
+.l-flex {
+  display: flex;
+}
+
+.l-flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.l-flex--col {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 640px) {
+  .l-flex--lg-row {
+    flex-direction: row;
+  }
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  border-radius: 0.625rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+.l- {
+  &site-container {
+    margin: 0 6.4%;
+  }
+
+  &flex {
+    display: flex;
+
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--col {
+      flex-direction: column;
+    }
+
+    &--lg-row {
+      @include breakpoint-up(medium) {
+        flex-direction: row;
+      }
+    }
+  }
+}
