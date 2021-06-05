@@ -22,3 +22,25 @@
     }
   }
 }
+
+.card {
+  padding-bottom: rem(20px);
+
+  &__img {}
+
+  &__main {
+    padding: 0 9.79%;
+  }
+
+  &__header {
+    margin-top: rem(36px);
+  }
+
+  &__body {
+    margin-top: rem(12px);
+  }
+
+  &__footer {
+    margin-top: rem(20px);
+  }
+}

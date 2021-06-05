@@ -4,4 +4,19 @@
   border-radius: rem(10px);
 
   &__img {}
+
+  &__header {
+    font-size: rem(16px);
+    line-height: rem(24px);
+    letter-spacing: rem(0.2px);
+  }
+
+  &__body {
+    color: $desaturatedDarkBlue;
+    font-weight: 200;
+    line-height: rem(20px);
+    letter-spacing: rem(0.121875px);
+  }
+
+  &__footer {}
 }

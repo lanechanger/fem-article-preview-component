@@ -17,6 +17,15 @@ body {
   height: 100%;
   min-height: 100vh;
   background-color: #ecf2f8;
+  color: #48556a;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
 }
 
 .attribution {
@@ -52,8 +61,41 @@ body {
 }
 
 .card {
+  padding-bottom: 1.25rem;
+}
+
+.card__main {
+  padding: 0 9.79%;
+}
+
+.card__header {
+  margin-top: 2.25rem;
+}
+
+.card__body {
+  margin-top: 0.75rem;
+}
+
+.card__footer {
+  margin-top: 1.25rem;
+}
+
+.card {
   background-color: #fff;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   border-radius: 0.625rem;
+}
+
+.card__header {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+}
+
+.card__body {
+  color: #6d7f97;
+  font-weight: 200;
+  line-height: 1.25rem;
+  letter-spacing: 0.00762rem;
 }
 /*# sourceMappingURL=style.css.map */
