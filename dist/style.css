@@ -13,11 +13,14 @@ html {
 
 body {
   font-size: 0.8125rem;
+  line-height: calc(20 / 13);
+  font-weight: 200;
+  letter-spacing: 0.00762rem;
   font-family: 'Manrope', sans-serif;
   height: 100%;
   min-height: 100vh;
   background-color: #ecf2f8;
-  color: #48556a;
+  color: #6d7f97;
 }
 
 button,
@@ -97,14 +100,23 @@ textarea {
 
 .card__header {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: calc(24/16);
   letter-spacing: 0.0125rem;
+  color: #48556a;
 }
 
 .card__body {
   color: #6d7f97;
+}
+
+.card__author {
+  font-style: normal;
+  font-weight: 700;
+  color: #48556a;
+}
+
+.card__date-published {
   font-weight: 200;
-  line-height: 1.25rem;
-  letter-spacing: 0.00762rem;
+  color: #9eafc2;
 }
 /*# sourceMappingURL=style.css.map */
