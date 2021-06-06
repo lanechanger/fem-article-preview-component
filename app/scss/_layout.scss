@@ -11,6 +11,10 @@
       align-items: center;
     }
 
+    &--jc-sb {
+      justify-content: space-between;
+    }
+
     &--col {
       flex-direction: column;
     }
@@ -44,5 +48,9 @@
 
   &__footer {
     margin-top: rem(20px);
+  }
+
+  &__avatar {
+    margin-right: rem(16px);
   }
 }

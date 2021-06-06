@@ -53,6 +53,10 @@ textarea {
   align-items: center;
 }
 
+.l-flex--jc-sb {
+  justify-content: space-between;
+}
+
 .l-flex--col {
   flex-direction: column;
 }
@@ -87,6 +91,10 @@ textarea {
   margin-top: 1.25rem;
 }
 
+.card__avatar {
+  margin-right: 1rem;
+}
+
 .card {
   background-color: #fff;
   box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
@@ -107,6 +115,11 @@ textarea {
 
 .card__body {
   color: #6d7f97;
+}
+
+.card__avatar {
+  max-width: 40px;
+  border-radius: 50%;
 }
 
 .card__author {

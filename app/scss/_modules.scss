@@ -21,6 +21,11 @@
 
   &__footer {}
 
+  &__avatar {
+    max-width: 40px;
+    border-radius: 50%;
+  }
+
   &__author {
     font-style: normal;
     font-weight: 700;
