@@ -64,6 +64,10 @@ textarea {
   padding-bottom: 1.25rem;
 }
 
+.card__img {
+  flex-basis: 200px;
+}
+
 .card__main {
   padding: 0 9.79%;
 }
@@ -82,8 +86,13 @@ textarea {
 
 .card {
   background-color: #fff;
-  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
   border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.card__img {
+  background: url("/images/drawers.jpg") no-repeat top 25% center/100%;
 }
 
 .card__header {

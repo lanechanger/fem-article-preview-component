@@ -1,9 +1,12 @@
 .card {
   background-color: #fff;
-  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  box-shadow: 0 rem(40px) rem(40px) rem(-10px) rgba(201, 213, 225, 0.503415);
   border-radius: rem(10px);
+  overflow: hidden;
 
-  &__img {}
+  &__img {
+    background: url("/images/drawers.jpg") no-repeat top 25% center/100%;
+  }
 
   &__header {
     font-size: rem(16px);

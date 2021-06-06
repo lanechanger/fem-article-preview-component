@@ -26,7 +26,9 @@
 .card {
   padding-bottom: rem(20px);
 
-  &__img {}
+  &__img {
+    flex-basis: 200px;
+  }
 
   &__main {
     padding: 0 9.79%;
