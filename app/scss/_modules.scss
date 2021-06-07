@@ -36,4 +36,18 @@
     font-weight: 200;
     color: $grayishBlue;
   }
+
+  &__btn {
+    width: rem(32px);
+    height: rem(32px);
+    border-radius: 50%;
+    border: none;
+    background-color: $lightGrayishBlue;
+    align-self: center;
+  }
+
+  &__share-icon {
+    width: rem(15px);
+    height: rem(13px);
+  }
 }
