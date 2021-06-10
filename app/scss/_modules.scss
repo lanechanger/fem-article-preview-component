@@ -13,6 +13,12 @@
     line-height: calc(24/16);
     letter-spacing: rem(0.2px);
     color: $veryDarkGrayishBlue;
+
+    @include breakpoint-up(large) {
+      font-size: rem(20px);
+      line-height: calc(28/20);
+      letter-spacing: rem(0.25px);
+    }
   }
 
   &__body {

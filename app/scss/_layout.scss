@@ -20,7 +20,7 @@
     }
 
     &--lg-row {
-      @include breakpoint-up(medium) {
+      @include breakpoint-up(large) {
         flex-direction: row;
       }
     }

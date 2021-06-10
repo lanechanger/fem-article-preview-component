@@ -61,7 +61,7 @@ textarea {
   flex-direction: column;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
   .l-flex--lg-row {
     flex-direction: row;
   }
@@ -111,6 +111,14 @@ textarea {
   line-height: calc(24/16);
   letter-spacing: 0.0125rem;
   color: #48556a;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__header {
+    font-size: 1.25rem;
+    line-height: calc(28/20);
+    letter-spacing: 0.01562rem;
+  }
 }
 
 .card__body {
