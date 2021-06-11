@@ -79,6 +79,12 @@ textarea {
   padding: 0 9.79%;
 }
 
+@media screen and (min-width: 1024px) {
+  .card__main {
+    padding: 2rem 3.912%;
+  }
+}
+
 .card__header {
   margin-top: 2.25rem;
 }

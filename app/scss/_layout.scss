@@ -36,6 +36,10 @@
 
   &__main {
     padding: 0 9.79%;
+
+    @include breakpoint-up(large) {
+      padding: rem(32px) 3.912%;
+    }
   }
 
   &__header {
