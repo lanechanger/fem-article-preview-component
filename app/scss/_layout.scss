@@ -30,6 +30,10 @@
 .card {
   padding-bottom: rem(20px);
 
+  @include breakpoint-up(large) {
+    padding-bottom: 0;
+  }
+
   &__img {
     flex-basis: 200px;
   }
@@ -44,6 +48,10 @@
 
   &__header {
     margin-top: rem(36px);
+
+    @include breakpoint-up(large) {
+      margin-top: 0;
+    }
   }
 
   &__body {
@@ -52,6 +60,10 @@
 
   &__footer {
     margin-top: rem(32px);
+
+    @include breakpoint-up(large) {
+      margin-top: rem(20px);
+    }
   }
 
   &__avatar {

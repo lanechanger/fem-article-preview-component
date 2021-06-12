@@ -71,6 +71,12 @@ textarea {
   padding-bottom: 1.25rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    padding-bottom: 0;
+  }
+}
+
 .card__img {
   flex-basis: 200px;
 }
@@ -89,12 +95,24 @@ textarea {
   margin-top: 2.25rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .card__header {
+    margin-top: 0;
+  }
+}
+
 .card__body {
   margin-top: 0.75rem;
 }
 
 .card__footer {
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__footer {
+    margin-top: 1.25rem;
+  }
 }
 
 .card__avatar {
