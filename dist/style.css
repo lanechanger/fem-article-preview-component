@@ -78,7 +78,13 @@ textarea {
 }
 
 .card__img {
-  flex-basis: 200px;
+  flex: 0 0 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__img {
+    flex-basis: 285px;
+  }
 }
 
 .card__main {
@@ -87,7 +93,7 @@ textarea {
 
 @media screen and (min-width: 1024px) {
   .card__main {
-    padding: 2rem 3.912%;
+    padding: 2rem 5.48%;
   }
 }
 
@@ -124,10 +130,18 @@ textarea {
   box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
   border-radius: 0.625rem;
   overflow: hidden;
+  max-width: 45.625rem;
 }
 
 .card__img {
   background: url("/images/drawers.jpg") no-repeat top 25% center/100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__img {
+    background-size: cover;
+    background-position: 0 0;
+  }
 }
 
 .card__header {

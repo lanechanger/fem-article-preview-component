@@ -35,14 +35,18 @@
   }
 
   &__img {
-    flex-basis: 200px;
+    flex: 0 0 200px;
+
+    @include breakpoint-up(large) {
+      flex-basis: 285px;
+    }
   }
 
   &__main {
     padding: 0 9.79%;
 
     @include breakpoint-up(large) {
-      padding: rem(32px) 3.912%;
+      padding: rem(32px) 5.48%;
     }
   }
 
