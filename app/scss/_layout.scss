@@ -1,6 +1,10 @@
 .l- {
   &site-container {
     margin: 0 6.4%;
+
+    @include breakpoint-up(large) {
+      padding: 5rem 0;
+    }
   }
 
   &flex {

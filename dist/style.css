@@ -44,6 +44,12 @@ textarea {
   margin: 0 6.4%;
 }
 
+@media screen and (min-width: 1024px) {
+  .l-site-container {
+    padding: 5rem 0;
+  }
+}
+
 .l-flex {
   display: flex;
 }
