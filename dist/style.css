@@ -42,7 +42,7 @@ textarea {
 }
 
 .l-site-container {
-  margin: 0 6.4%;
+  padding: 3rem 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -148,7 +148,13 @@ textarea {
   box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
   border-radius: 0.625rem;
   overflow: hidden;
-  max-width: 45.625rem;
+  max-width: 20.4375rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 45.625rem;
+  }
 }
 
 .card__img {

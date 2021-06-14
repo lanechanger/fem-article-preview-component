@@ -3,7 +3,11 @@
   box-shadow: 0 rem(40px) rem(40px) rem(-10px) rgba(201, 213, 225, 0.503415);
   border-radius: rem(10px);
   overflow: hidden;
-  max-width: rem(730px);
+  max-width: rem(327px);
+
+  @include breakpoint-up(large) {
+    max-width: rem(730px);
+  }
 
   &__img {
     background: url("/images/drawers.jpg") no-repeat top 25% center/100%;
