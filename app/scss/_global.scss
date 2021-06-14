@@ -34,6 +34,7 @@ textarea {
 .attribution {
   font-size: 11px;
   text-align: center;
+  z-index: -1;
 
   & a {
     color: hsl(228, 45%, 44%);

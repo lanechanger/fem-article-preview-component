@@ -39,10 +39,10 @@
   }
 
   &__img {
-    flex: 0 0 200px;
+    flex: 0 0 rem(200px);
 
     @include breakpoint-up(large) {
-      flex-basis: 285px;
+      flex-basis: rem(285px);
     }
   }
 
@@ -76,5 +76,14 @@
 
   &__avatar {
     margin-right: rem(16px);
+  }
+}
+
+.attribution {
+  position: absolute;
+
+  @media (min-height: 300px) {
+    position: fixed;
+    bottom: 1rem;
   }
 }

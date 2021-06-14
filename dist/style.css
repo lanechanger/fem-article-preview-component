@@ -34,6 +34,7 @@ textarea {
 .attribution {
   font-size: 11px;
   text-align: center;
+  z-index: -1;
 }
 
 .attribution a {
@@ -84,12 +85,12 @@ textarea {
 }
 
 .card__img {
-  flex: 0 0 200px;
+  flex: 0 0 12.5rem;
 }
 
 @media screen and (min-width: 1024px) {
   .card__img {
-    flex-basis: 285px;
+    flex-basis: 17.8125rem;
   }
 }
 
@@ -129,6 +130,17 @@ textarea {
 
 .card__avatar {
   margin-right: 1rem;
+}
+
+.attribution {
+  position: absolute;
+}
+
+@media (min-height: 300px) {
+  .attribution {
+    position: fixed;
+    bottom: 1rem;
+  }
 }
 
 .card {
