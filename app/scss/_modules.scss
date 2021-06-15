@@ -1,13 +1,13 @@
 .card {
   background-color: #fff;
-  box-shadow: 0 rem(40px) rem(40px) rem(-10px) rgba(201, 213, 225, 0.503415);
   border-radius: rem(10px);
+  box-shadow: 0 rem(40px) rem(40px) rem(-10px) rgba(201, 213, 225, 0.503415);
   overflow: visible;
   width: rem(327px);
 
   @include breakpoint-up(large) {
-    width: rem(730px);
     overflow: visible;
+    width: rem(730px);
   }
 
   &__img {
@@ -16,23 +16,23 @@
     border-top-right-radius: rem(10px);
 
     @include breakpoint-up(large) {
-      background-size: cover;
       background-position: 0 0;
-      border-top-right-radius: 0;
+      background-size: cover;
       border-bottom-left-radius: rem(10px);
+      border-top-right-radius: 0;
     }
   }
 
   &__header {
-    font-size: rem(16px);
-    line-height: calc(24/16);
-    letter-spacing: rem(0.2px);
     color: $veryDarkGrayishBlue;
+    font-size: rem(16px);
+    letter-spacing: rem(0.2px);
+    line-height: calc(24/16);
 
     @include breakpoint-up(large) {
       font-size: rem(20px);
-      line-height: calc(28/20);
       letter-spacing: rem(0.25px);
+      line-height: calc(28/20);
     }
   }
 
@@ -45,29 +45,31 @@
   }
 
   &__avatar {
-    max-width: 40px;
     border-radius: 50%;
+    max-width: rem(40px);
   }
 
   &__author {
+    color: $veryDarkGrayishBlue;
     font-style: normal;
     font-weight: 700;
-    color: $veryDarkGrayishBlue;
   }
 
   &__date-published {
-    font-weight: 200;
     color: $grayishBlue;
+    font-weight: 200;
   }
 
   &__btn {
-    width: rem(32px);
-    height: rem(32px);
-    border-radius: 50%;
-    border: none;
-    background-color: $lightGrayishBlue;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
+    background-color: $lightGrayishBlue;
+    border: none;
+    border-radius: 50%;
     cursor: pointer;
+    height: rem(32px);
+    width: rem(32px);
     z-index: 2;
 
     &--is-toggled-on {
@@ -80,38 +82,39 @@
   }
 
   &__share-icon {
-    width: rem(15px);
     height: rem(13px);
+    width: rem(15px);
   }
 }
 
 .socials {
-  display: none;
-  position: absolute;
-  width: rem(327px);
-  height: rem(72px);
   background-color: $veryDarkGrayishBlue;
   border-bottom-left-radius: rem(10px);
   border-bottom-right-radius: rem(10px);
+  display: none;
+  height: rem(72px);
+  position: absolute;
+  width: rem(327px);
 
   @include breakpoint-up(large) {
-    width: rem(248px);
-    height: rem(55px);
-    box-shadow: 0px rem(10px) rem(10px) rgba(201, 213, 225, 0.503415);
     border-radius: rem(10px);
+    box-shadow: 0px rem(10px) rem(10px) rgba(201, 213, 225, 0.503415);
+    height: rem(55px);
+    width: rem(248px);
   }
 
   &::after {
     @include breakpoint-up(large) {
-      content: '';
-      width: rem(20px);
-      height: rem(20px);
       background-color: $veryDarkGrayishBlue;
-      display: block;
-      position: relative;
-      transform: rotate(45deg) translateX(-50%);
-      left: 50%;
       bottom: 7%;
+      content: '';
+      display: block;
+      height: rem(20px);
+      left: 50%;
+      position: relative;
+      -webkit-transform: rotate(45deg) translateX(-50%);
+      transform: rotate(45deg) translateX(-50%);
+      width: rem(20px);
     }
   }
 
@@ -128,8 +131,6 @@
     color: $grayishBlue;
     text-transform: uppercase;
   }
-
-  &__icons {}
 }
 
 .attribution {

@@ -6,21 +6,21 @@ html {
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 body {
-  font-size: rem(13px);
-  line-height: calc(20 / 13);
-  font-weight: 200;
-  letter-spacing: rem(0.121875px);
-  font-family: 'Manrope', sans-serif;
-  height: 100%;
-  min-height: 100vh;
   background-color: $lightGrayishBlue;
   color: $desaturatedDarkBlue;
+  font-family: 'Manrope', sans-serif;
+  font-size: rem(13px);
+  font-weight: 200;
+  height: 100%;
+  letter-spacing: rem(0.121875px);
+  line-height: calc(20 / 13);
+  min-height: 100vh;
 }
 
 button,
@@ -44,14 +44,19 @@ a:focus-visible {
 
 button,
 a {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  transition: -webkit-transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
 }
 
 button:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 a:hover {
+  -webkit-transform: scale(1.2) rotate(4deg);
   transform: scale(1.2) rotate(4deg);
 }
 

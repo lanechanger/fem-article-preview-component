@@ -6,21 +6,21 @@ html {
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 body {
-  font-size: 0.8125rem;
-  line-height: calc(20 / 13);
-  font-weight: 200;
-  letter-spacing: 0.00762rem;
-  font-family: 'Manrope', sans-serif;
-  height: 100%;
-  min-height: 100vh;
   background-color: #ecf2f8;
   color: #6d7f97;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 200;
+  height: 100%;
+  letter-spacing: 0.00762rem;
+  line-height: calc(20 / 13);
+  min-height: 100vh;
 }
 
 button,
@@ -75,8 +75,8 @@ li {
 }
 
 .l-flex--center {
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .l-flex--jc-sb {
@@ -162,14 +162,14 @@ li {
 }
 
 .socials {
-  margin-top: -0.75rem;
   margin-left: -2rem;
+  margin-top: -0.75rem;
 }
 
 @media screen and (min-width: 1024px) {
   .socials {
-    margin-top: -5rem;
     margin-left: 14.0625rem;
+    margin-top: -5rem;
   }
 }
 
@@ -191,23 +191,23 @@ li {
 
 @media (min-height: 300px) {
   .attribution {
-    position: fixed;
     bottom: 1rem;
+    position: fixed;
   }
 }
 
 .card {
   background-color: #fff;
-  box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
   border-radius: 0.625rem;
+  box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
   overflow: visible;
   width: 20.4375rem;
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    width: 45.625rem;
     overflow: visible;
+    width: 45.625rem;
   }
 }
 
@@ -219,25 +219,25 @@ li {
 
 @media screen and (min-width: 1024px) {
   .card__img {
-    background-size: cover;
     background-position: 0 0;
-    border-top-right-radius: 0;
+    background-size: cover;
     border-bottom-left-radius: 0.625rem;
+    border-top-right-radius: 0;
   }
 }
 
 .card__header {
-  font-size: 1rem;
-  line-height: calc(24/16);
-  letter-spacing: 0.0125rem;
   color: #48556a;
+  font-size: 1rem;
+  letter-spacing: 0.0125rem;
+  line-height: calc(24/16);
 }
 
 @media screen and (min-width: 1024px) {
   .card__header {
     font-size: 1.25rem;
-    line-height: calc(28/20);
     letter-spacing: 0.01562rem;
+    line-height: calc(28/20);
   }
 }
 
@@ -250,29 +250,29 @@ li {
 }
 
 .card__avatar {
-  max-width: 40px;
   border-radius: 50%;
+  max-width: 2.5rem;
 }
 
 .card__author {
+  color: #48556a;
   font-style: normal;
   font-weight: 700;
-  color: #48556a;
 }
 
 .card__date-published {
-  font-weight: 200;
   color: #9eafc2;
+  font-weight: 200;
 }
 
 .card__btn {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  border: none;
-  background-color: #ecf2f8;
   align-self: center;
+  background-color: #ecf2f8;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
+  height: 2rem;
+  width: 2rem;
   z-index: 2;
 }
 
@@ -285,40 +285,40 @@ li {
 }
 
 .card__share-icon {
-  width: 0.9375rem;
   height: 0.8125rem;
+  width: 0.9375rem;
 }
 
 .socials {
-  display: none;
-  position: absolute;
-  width: 20.4375rem;
-  height: 4.5rem;
   background-color: #48556a;
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
+  display: none;
+  height: 4.5rem;
+  position: absolute;
+  width: 20.4375rem;
 }
 
 @media screen and (min-width: 1024px) {
   .socials {
-    width: 15.5rem;
-    height: 3.4375rem;
-    box-shadow: 0px 0.625rem 0.625rem rgba(201, 213, 225, 0.503415);
     border-radius: 0.625rem;
+    box-shadow: 0px 0.625rem 0.625rem rgba(201, 213, 225, 0.503415);
+    height: 3.4375rem;
+    width: 15.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .socials::after {
-    content: '';
-    width: 1.25rem;
-    height: 1.25rem;
     background-color: #48556a;
+    bottom: 7%;
+    content: '';
     display: block;
+    height: 1.25rem;
+    left: 50%;
     position: relative;
     transform: rotate(45deg) translateX(-50%);
-    left: 50%;
-    bottom: 7%;
+    width: 1.25rem;
   }
 }
 
