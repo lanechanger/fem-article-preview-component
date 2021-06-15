@@ -31,18 +31,32 @@ textarea {
   font-size: 100%;
 }
 
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px dotted #9eafc2;
+  outline-offset: 3px;
+}
+
+button,
+a {
+  transition: transform 150ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+a:hover {
+  transform: scale(1.2) rotate(4deg);
+}
+
 li {
   list-style-type: none;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  z-index: -1;
-}
-
-.attribution a {
-  color: #3e52a3;
 }
 
 .l-site-container {
@@ -320,5 +334,15 @@ li {
 .socials__share {
   color: #9eafc2;
   text-transform: uppercase;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  z-index: -1;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
