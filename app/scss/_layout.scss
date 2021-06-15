@@ -1,5 +1,6 @@
 .l- {
   &site-container {
+    margin: 0 6.505%;
     padding: 3rem 0;
 
     @include breakpoint-up(large) {
@@ -17,6 +18,10 @@
 
     &--jc-sb {
       justify-content: space-between;
+    }
+
+    &--ai-c {
+      align-items: center;
     }
 
     &--col {
@@ -47,7 +52,7 @@
   }
 
   &__main {
-    padding: 0 9.79%;
+    padding: 0 rem(32px);
 
     @include breakpoint-up(large) {
       padding: rem(32px) 5.48%;
@@ -75,6 +80,38 @@
   }
 
   &__avatar {
+    margin-right: rem(16px);
+  }
+
+  &__btn {
+    &--is-toggled-on {
+      @include breakpoint-down(large) {
+        margin-bottom: rem(-8px);
+      }
+    }
+  }
+}
+
+.socials {
+  margin-top: rem(-12px);
+  margin-left: rem(-32px);
+
+  @include breakpoint-up(large) {
+    margin-top: rem(-80px);
+    margin-left: rem(225px);
+  }
+
+  &--is-toggled-on {}
+
+  &__wrapper {
+    padding: 0 rem(32px);
+  }
+
+  &__share {
+    margin-right: rem(20px);
+  }
+
+  &__icon-item:not(:last-child) {
     margin-right: rem(16px);
   }
 }

@@ -2,19 +2,24 @@
   background-color: #fff;
   box-shadow: 0 rem(40px) rem(40px) rem(-10px) rgba(201, 213, 225, 0.503415);
   border-radius: rem(10px);
-  overflow: hidden;
-  max-width: rem(327px);
+  overflow: visible;
+  width: rem(327px);
 
   @include breakpoint-up(large) {
-    max-width: rem(730px);
+    width: rem(730px);
+    overflow: visible;
   }
 
   &__img {
     background: url("/images/drawers.jpg") no-repeat top 25% center/100%;
+    border-top-left-radius: rem(10px);
+    border-top-right-radius: rem(10px);
 
     @include breakpoint-up(large) {
       background-size: cover;
       background-position: 0 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: rem(10px);
     }
   }
 
@@ -35,7 +40,9 @@
     color: $desaturatedDarkBlue;
   }
 
-  &__footer {}
+  &__footer {
+    position: relative;
+  }
 
   &__avatar {
     max-width: 40px;
@@ -60,10 +67,67 @@
     border: none;
     background-color: $lightGrayishBlue;
     align-self: center;
+    cursor: pointer;
+    z-index: 2;
+
+    &--is-toggled-on {
+      background-color: $desaturatedDarkBlue;
+
+      & path {
+        fill: white;
+      }
+    }
   }
 
   &__share-icon {
     width: rem(15px);
     height: rem(13px);
   }
+}
+
+.socials {
+  display: none;
+  position: absolute;
+  width: rem(327px);
+  height: rem(72px);
+  background-color: $veryDarkGrayishBlue;
+  border-bottom-left-radius: rem(10px);
+  border-bottom-right-radius: rem(10px);
+
+  @include breakpoint-up(large) {
+    width: rem(248px);
+    height: rem(55px);
+    box-shadow: 0px rem(10px) rem(10px) rgba(201, 213, 225, 0.503415);
+    border-radius: rem(10px);
+  }
+
+  &::after {
+    @include breakpoint-up(large) {
+      content: '';
+      width: rem(20px);
+      height: rem(20px);
+      background-color: $veryDarkGrayishBlue;
+      display: block;
+      position: relative;
+      transform: rotate(45deg) translateX(-50%);
+      left: 50%;
+      bottom: 7%;
+    }
+  }
+
+  &--is-toggled-on {
+    display: block;
+  }
+
+  &__wrapper {
+    height: 100%;
+    letter-spacing: rem(5px);
+  }
+
+  &__share {
+    color: $grayishBlue;
+    text-transform: uppercase;
+  }
+
+  &__icons {}
 }
